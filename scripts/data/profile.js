@@ -2,24 +2,19 @@
 // Later synced with Supabase
 
 window.profile = {
-  name: 'Advanced Web Developer',
-  title: 'Front-End Engineer & Full-Stack Enthusiast',
+  name: 'NARMAYE GBAMAN PATRICK JOYCE',
+  title: 'Full-Stack Developer & IT Manager',
   avatar: 'assets/images/avatar.jpg',
-  bio: `Passionate developer specializing in modern web technologies. 
-  This portfolio showcases advanced concepts including:
-  • Supabase real-time backend integration
-  • SVG animations and graphics
-  • Component-based architecture
-  • Algorithmic content sorting
-  • Dynamic CV generation`,
+  bio: `Hi, I'm **NARMAYE GBAMAN PATRICK JOYCE**, a full-stack developer and digital solutions architect at AIALAB. 
+  This portfolio demonstrates advanced web engineering, Supabase realtime backend, SVG animations, algorithmic content, and dynamic CV generation.`,
   contact: {
-    email: 'hello@portfolio.dev',
-    phone: '+1 (555) 123-4567',
-    linkedin: 'https://linkedin.com/in/yourname',
-    github: 'https://github.com/yourusername',
-    location: 'Your City, Country'
+    email: 'narmayegbaman@example.com',
+    phone: '+237 XXX XXX XXX',
+    linkedin: 'https://linkedin.com/in/narmayegbaman',
+    github: 'https://github.com/PnjDark',
+    location: 'Cameroon'
   },
-  summary: '5+ years building scalable web applications with a focus on performance, accessibility, and user experience.'
+  summary: 'IT Manager & Full-Stack Developer blending web development, digital strategy, and creative problem-solving. Expert in JavaScript, TailwindCSS, Supabase, UI/UX, and scalable dashboards.'
 };
 
 export { profile };
