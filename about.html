@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Advanced Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/globals.css">
+  <script type="module" src="scripts/app.js" defer></script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100 min-h-screen font-sans transition-colors duration-300">
+  
+  <!-- Navbar (will be loaded by JS or duplicated) -->
+  <nav class="fixed top-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-200 dark:border-slate-700 shadow-lg transition-all duration-300">
+    <!-- Same navbar as index.html -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0 font-bold text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Portfolio</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a>
+          <a href="about.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-semibold border-b-2 border-blue-600">About</a>
+          <a href="projects.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
+          <a href="contact.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+        </div>
+        <button id="theme-toggle" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <section class="pt-24 pb-20 min-h-screen flex items-center justify-center relative">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="animate-float">
+        <svg class="w-48 h-48 mx-auto mb-8 opacity-20" viewBox="0 0 100 100" fill="currentColor">
+          <!-- Custom SVG illustration for about -->
+          <circle cx="50" cy="50" r="40" fill="url(#aboutGrad)" opacity="0.3">
+          <path d="M20 50 Q50 20 80 50 Q50 80 20 50" stroke="currentColor" stroke-width="4" fill="none">
+        </svg>
+      </div>
+      <h1 class="text-6xl md:text-7xl font-black mb-6 bg-gradient-to-r from-slate-900 via-slate-700 to-blue-600 dark:from-blue-400 dark:via-purple-400 bg-clip-text">About Me</h1>
+      <p class="text-xl md:text-2xl mb-12 opacity-90 leading-relaxed max-w-3xl mx-auto">Passionate front-end engineer specializing in modern web technologies. This portfolio demonstrates advanced concepts including Supabase integration, SVG animations, algorithmic content rendering, and automated CV generation from live data.</p>
+      <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div class="glass p-8 rounded-2xl hover-scale">
+          <h3 class="text-2xl font-bold mb-4">Technical Expertise</h3>
+          <ul class="space-y-2 text-left">
+            <li>• HTML5 Semantic</li>
+            <li>• TailwindCSS + Animations</li>
+            <li>• Vanilla JS ES2024</li>
+            <li>• Supabase Backend</li>
+          </ul>
+        </div>
+        <div class="glass p-8 rounded-2xl hover-scale">
+          <h3 class="text-2xl font-bold mb-4">Key Features</h3>
+          <ul class="space-y-2 text-left">
+            <li>• Admin Dashboard</li>
+            <li>• Real-time Updates</li>
+            <li>• Auto CV Generator</li>
+            <li>• Algorithmic Sorting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="py-24 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/50 dark:to-slate-800">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16">Experience & Journey</h2>
+      <!-- Loaded by experience.js -->
+    </div>
+  </section>
+
+  <!-- Footer same as index -->
+  <footer class="bg-slate-900 text-white py-12 mt-24">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>&copy; 2024. Advanced Web Dev Portfolio.</p>
+    </div>
+  </footer>
+
+  <!-- Inline theme toggle same as index -->
+  <script>
+    // Same theme logic
+    const toggle = document.getElementById('theme-toggle');
+    toggle?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

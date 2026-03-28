@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Portfolio Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles/globals.css">
+  <link rel="stylesheet" href="styles/dashboard.css">
+  <script type="module">
+    import '../scripts/app.js';
+    import './scripts/auth.js';
+    import './scripts/db.js';
+    import './scripts/realtime.js';
+    import './scripts/renderDashboard.js';
+  </script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+  <div id="app" class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-800/50 backdrop-blur border-r border-slate-700 p-6 fixed h-full">
+      <div class="font-bold text-2xl mb-12">Admin Panel</div>
+      <nav class="space-y-4">
+        <button data-page="dashboard" class="w-full text-left p-3 rounded-xl bg-blue-600/20">Dashboard</button>
+        <button data-page="projects" class="w-full text-left p-3 rounded-xl hover:bg-slate-700">Projects</button>
+        <button data-page="skills" class="w-full text-left p-3 rounded-xl hover:bg-slate-700">Skills</button>
+        <button data-page="experience" class="w-full text-left p-3 rounded-xl hover:bg-slate-700">Experience</button>
+        <button data-page="cv" class="w-full text-left p-3 rounded-xl hover:bg-slate-700">CV Manager</button>
+        <button id="logout" class="w-full text-left p-3 rounded-xl hover:bg-red-600/50 mt-auto">Logout</button>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-64 p-12">
+      <div class="flex justify-between items-center mb-12">
+        <h1 class="text-4xl font-bold">Dashboard</h1>
+        <button onclick="App.generateCV()" class="glass px-6 py-2 rounded-xl hover-scale bg-green-600 hover:bg-green-700 text-white font-semibold">Generate CV</button>
+
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="glass p-8 rounded-3xl col-span-2">
+          <h2 class="text-2xl font-bold mb-6">Quick Stats</h2>
+          <div class="grid md:grid-cols-4 gap-6">
+            <div class="text-center p-6 rounded-2xl bg-blue-600/20">
+              <div class="text-3xl font-bold">12</div>
+              <p>Projects</p>
+            </div>
+            <!-- More stats -->
+          </div>
+        </div>
+        <div class="glass p-8 rounded-3xl">
+          <h2 class="text-2xl font-bold mb-6">Recent Activity</h2>
+          <!-- Realtime list -->
+        </div>
+      </div>
+
+      <!-- Content area loaded dynamically -->
+      <div id="page-content" class="mt-12 glass p-8 rounded-3xl">
+        Dashboard content loads here...
+      </div>
+    </main>
+  </div>
+</body>
+</html>
