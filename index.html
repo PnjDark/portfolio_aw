@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NARMAYE GBAMAN PATRICK JOYCE — Full-Stack Developer & IT Manager Portfolio</title>
+  <title>NARMAYE GBAMAN PATRICK JOYCE — Full-Stack Developer & IT Manager Portfolio</title>
   <meta name="description" content="Explore the advanced web development portfolio of NARMAYE GBAMAN PATRICK JOYCE featuring TailwindCSS interfaces, Supabase admin dashboards, dynamic CV generation, JavaScript projects, and digital strategy in Cameroon.">
   <meta name="keywords" content="Narmaye Gbaman Patrick Joyce, Full-Stack Developer Cameroon, Web Developer, IT Manager, Supabase, TailwindCSS, JavaScript Portfolio">
   <link rel="canonical" href=".">
@@ -26,101 +26,61 @@
   <link rel="stylesheet" href="styles/globals.css">
   <script type="module" src="scripts/app.js" defer></script>
 </head>
-<body class="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100 min-h-screen font-sans transition-colors duration-300">
-  
-  <!-- Navbar -->
-  <nav id="navbar" class="fixed top-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-200 dark:border-slate-700 shadow-lg transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex-shrink-0 font-bold text-lg md:text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">N.G.P.J Portfolio</div>
-        <div class="hidden md:flex space-x-8">
-          <a href="index.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a>
-          <a href="about.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
-          <a href="projects.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
-          <a href="contact.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+<body class="dark:bg-slate-900 dark:text-slate-100">
+
+  <div data-component="navbar"></div>
+
+  <main>
+    <section class="hero-section pt-24 pb-16 min-h-screen flex items-center justify-center">
+      <div class="container text-center animate-fade-in-up">
+        <h1 class="section-title highlight mb-6">NARMAYE GBAMAN PATRICK JOYCE</h1>
+        <p class="section-subtitle max-w-3xl mx-auto mb-8">I build responsive products with clean code, interactive design, and reliable backend architecture. From Supabase dashboards to algorithmic portfolio sorting—everything is built for scale & human experience.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="projects.html" class="btn btn-primary px-8 py-3">See Work</a>
+          <a href="about.html" class="btn btn-secondary px-8 py-3">About Me</a>
         </div>
-        <button id="theme-toggle" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-        </button>
-        <button class="md:hidden p-2">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
       </div>
-    </div>
-  </nav>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="pt-24 pb-20 min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-600 text-white relative overflow-hidden">
-    <div class="absolute inset-0 opacity-20">
-      <svg viewBox="0 0 100 100" class="w-full h-full animate-pulse">
-        <defs>
-          <radialGradient id="heroGrad" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="white" stop-opacity="0.3">
-            <stop offset="100%" stop-color="white" stop-opacity="0">
-          </radialGradient>
-        </defs>
-        <circle cx="20" cy="20" r="8" fill="url(#heroGrad)">
-        <circle cx="80" cy="30" r="12" fill="url(#heroGrad)">
-        <circle cx="40" cy="80" r="10" fill="url(#heroGrad)">
-        <circle cx="90" cy="70" r="6" fill="url(#heroGrad)">
-      </svg>
-    </div>
-    <div class="text-center max-w-4xl mx-auto px-4 z-10">
-<h1 class="text-6xl md:text-7xl font-black mb-6 bg-gradient-to-r from-white via-slate-100 to-transparent bg-clip-text">NARMAYE GBAMAN PATRICK JOYCE</h1>
-      <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">Full-Stack Developer & IT Manager crafting elegant digital experiences in web, data, and interactive worlds. Supabase-powered admin dashboard, auto CV generation, algorithmic projects sorting.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#projects" class="bg-white text-slate-900 px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300">View Projects</a>
-        <a href="contact.html" class="border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-slate-900 transition-all duration-300">Get In Touch</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-24 bg-white dark:bg-slate-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-blue-400 dark:to-purple-400 bg-clip-text">Skills & Technologies</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Skill Bars will be populated by JS -->
-        <div class="skill-item">
-          <h3 class="text-xl font-semibold mb-2">HTML5 & CSS3</h3>
-          <div class="bg-slate-200 dark:bg-slate-700 rounded-full h-3">
-            <div class="bg-gradient-to-r from-green-500 to-blue-500 h-3 rounded-full animate-skillbar w-0" data-width="95%"></div>
-          </div>
+    <section id="skills" class="py-24 bg-slate-50 dark:bg-slate-900">
+      <div class="container">
+        <h2 class="section-title text-center mb-12">Core Skills</h2>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="card p-6 glass">
+            <h3 class="text-xl font-semibold mb-3">Frontend Engineering</h3>
+            <p>Pixel-perfect UI, Tailwind utility-first design, Web accessibility, responsive animations.</p>
+          </article>
+          <article class="card p-6 glass">
+            <h3 class="text-xl font-semibold mb-3">Backend & Data</h3>
+            <p>Supabase realtime, RESTful APIs, database modelling, secure authentication and authorization.</p>
+          </article>
+          <article class="card p-6 glass">
+            <h3 class="text-xl font-semibold mb-3">Product Strategy</h3>
+            <p>Digital strategy, stakeholder communication, roadmap planning, data-driven improvement loops.</p>
+          </article>
         </div>
-        <!-- More skills... -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-24 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-center mb-16">Featured Projects</h2>
-      <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Projects loaded by JS -->
+    <section id="projects" class="py-24 bg-gradient-to-b from-white to-slate-100 dark:from-slate-900 dark:to-slate-800">
+      <div class="container">
+        <div class="flex items-end justify-between mb-8">
+          <h2 class="section-title">Featured Projects</h2>
+          <a href="projects.html" class="btn btn-secondary px-5 py-2">View Portfolio</a>
+        </div>
+        <div id="projects-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p>&copy; 2024 Advanced Portfolio. Built with ❤️ using modern web tech.</p>
-    </div>
-  </footer>
+    <section class="py-20 bg-white dark:bg-slate-900">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Let’s Collaborate</h2>
+        <p class="section-subtitle max-w-xl mx-auto mb-6">Whether you're building a startup product or optimizing enterprise workflow, I help teams deliver reliable, faster MVPs with strong UX and robust integration.</p>
+        <a href="contact.html" class="btn btn-primary px-10 py-3">Get in Touch</a>
+      </div>
+    </section>
+  </main>
 
-  <script>
-    // Basic theme toggle
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-    });
-    if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-  </script>
+  <div data-component="footer"></div>
 </body>
 </html>

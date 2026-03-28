@@ -3,54 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NARMAYE GBAMAN PATRICK JOYCE JavaScript Projects - Tailwind Supabase Portfolio Examples</title>
+  <title>NARMAYE GBAMAN PATRICK JOYCE JavaScript Projects - Tailwind Supabase Portfolio Examples</title>
   <meta name="description" content="NARMAYE GBAMAN PATRICK JOYCE web app development projects: JavaScript, TailwindCSS, Supabase dashboards, algorithmic sorting, modern portfolio showcase.">
   <meta name="keywords" content="Narmaye Gbaman Patrick Joyce Projects, JavaScript Portfolio, Supabase Projects, TailwindCSS Examples, Web Development Projects">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles/globals.css">
   <script type="module" src="scripts/app.js" defer></script>
 </head>
-<body class="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100 min-h-screen font-sans">
-  
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-b shadow-lg">
-    <!-- Same as other pages -->
-  </nav>
+<body>
 
-  <!-- Projects Hero -->
-  <section class="pt-24 pb-20 min-h-screen flex items-center justify-center">
-    <div class="text-center max-w-4xl mx-auto px-4">
-<h1 class="text-6xl md:text-7xl font-black mb-8 bg-gradient-to-r from-slate-900 to-blue-600 bg-clip-text">NARMAYE GBAMAN PATRICK JOYCE Projects</h1>
-      <p class="text-2xl opacity-90 mb-12">Algorithmically sorted showcase of advanced JavaScript, TailwindCSS, and Supabase dashboard projects. Web app development portfolio examples.</p>
-      <div id="projects-sorter" class="flex gap-4 justify-center flex-wrap">
-        <button class="px-6 py-2 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700">Recency</button>
-        <button class="px-6 py-2 border border-slate-300 dark:border-slate-600 rounded-full font-medium hover-scale">Complexity</button>
-        <button class="px-6 py-2 border border-slate-300 dark:border-slate-600 rounded-full font-medium hover-scale">Tech Stack</button>
+  <div data-component="navbar"></div>
+
+  <main class="pt-24">
+    <section class="py-16 text-center bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+      <div class="container">
+        <h1 class="section-title mb-4">Projects</h1>
+        <p class="section-subtitle max-w-2xl mx-auto">A collection of professional projects that demonstrate architecture, deep integrations, and user-centered frontend experiences.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Grid -->
-  <section class="py-24">
-    <div class="max-w-7xl mx-auto px-4">
-      <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-scroll>
-        <!-- Dynamic project cards from projects.js + sorter -->
+    <section class="py-10 container">
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
+        <button class="btn btn-secondary px-5 py-2">Recency</button>
+        <button class="btn btn-secondary px-5 py-2">Complexity</button>
+        <button class="btn btn-secondary px-5 py-2">Tech Stack</button>
       </div>
-    </div>
-  </section>
+      <div id="projects-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-scroll></div>
+    </section>
 
-  <!-- Download CV Button -->
-  <div class="fixed bottom-8 right-8 glass p-4 rounded-full shadow-2xl hover-scale z-40" onclick="App.generateCV()">
-    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-    </svg>
-  </div>
+    <section class="py-16 bg-slate-50 dark:bg-slate-900">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Featured Case Study</h2>
+        <p class="section-subtitle max-w-xl mx-auto">Supabase admin dashboard project with real-time data, analytics widgets, and incremental deployment features, built for performance and maintainability.</p>
+      </div>
+    </section>
+  </main>
 
-  <footer class="bg-slate-900 text-white py-12 mt-auto">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <p>&copy; 2024 Advanced Portfolio</p>
-    </div>
-  </footer>
+  <div data-component="footer"></div>
 
 </body>
 </html>
