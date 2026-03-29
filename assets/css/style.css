@@ -2171,6 +2171,10 @@ textarea.form-input::-webkit-resizer {
   overflow: hidden;
   position: relative;
 }
+
+.tset {
+  background-color: #5c3d99;
+}
 .words::after {
   content: "";
   position: absolute;
@@ -2187,7 +2191,7 @@ textarea.form-input::-webkit-resizer {
 .word {
   display: block;
   height: 100%;
-  padding-left: 6px;
+  padding-left: 3px;
   color: #956afa;
   animation: spin_4991 4s infinite;
 }
